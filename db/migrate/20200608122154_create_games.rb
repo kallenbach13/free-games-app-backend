@@ -5,10 +5,12 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :developer
       t.string :publisher
-      t.references :genre
+      t.string :url
       t.references :game_store
+      t.string :api_id
 
       t.timestamps
     end
   end
 end
+
